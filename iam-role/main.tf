@@ -1,6 +1,10 @@
 module "iam-role" {
-  source  = "app.terraform.io/tmz-veloce-proj/iam-role/aws"
-  version = "1.0.0"
+  source  = "app.terraform.io/veloce/iam-role/aws"
+  version = "1.0.1"
+  # insert required variables here
+
+
+
   role_name = var.role_name
   role_env = var.role_env
   role_build_by = var.role_build_by
