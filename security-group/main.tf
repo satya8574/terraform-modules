@@ -1,15 +1,17 @@
 data "terraform_remote_state" "vpc" {
   backend = "remote"
   config = {
-    organization = "tmz-demo"
+    organization = "veloce"
     workspaces = {
-      name = "veloce-terraform-vpc"
+      name = "terraform-code-security-group"
     }
   }
 }
 module "security" {
-  source  = "app.terraform.io/tmz-demo/security/aws"
-  version = "1.0.0"
+  source  = "app.terraform.io/veloce/security/aws"
+  version = "1.0.1"
+  # insert required variables here
+
   region                  = var.region
   security_group_ssh_port = var.security_group_ssh_port
   security_group_rds_port = var.security_group_rds_port
