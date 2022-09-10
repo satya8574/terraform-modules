@@ -1,0 +1,16 @@
+variable "creator_name" {}
+variable "environment_name" {}
+variable "managedby" {}
+variable "db_parameter_group_name" {}
+variable "db_subnet_group_name" {}
+variable "db_username" {}
+variable "db_password" {}
+variable "db_identifier" {}
+variable "db_instance_name" {}
+variable "db_instance_class" {}
+variable "db_engine" {}
+variable "db_engine_version" {}
+variable "db_allocated_storage" {}
+variable "subnets_ids" {}
+variable "security_group_ids" {}
+variable "region" {}

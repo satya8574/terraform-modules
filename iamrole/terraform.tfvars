@@ -1,0 +1,6 @@
+role_name = "veloce_role"
+role_env = "dev"
+role_build_by = "Terraform"
+instance_role_profile_name = "veloce_profile"
+policy_name = "veloce_policy_s3"
+region = "us-east-2"

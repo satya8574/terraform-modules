@@ -1,0 +1,15 @@
+db_parameter_group_name = "veloce-db-parameter-group"
+db_subnet_group_name    = "veloce-db-sg"
+db_username             = "Veloce"
+db_password             = "Tekmindz123"
+db_identifier           = "veloce-db-identifier"
+db_instance_name        = "Veloce_DB_Instance"
+db_instance_class       = "db.t3.micro"
+db_engine               = "postgres"
+db_engine_version       = "14.4"
+db_allocated_storage    = "5"
+creator_name            = "Creator_Name"
+environment_name        = "Dev"
+managedby               = "Terraform"
+subnets_ids             = ["data.terraform_remote_state.vpc.outputs.aws_subnet_privatesubnets_01_id", "data.terraform_remote_state.vpc.outputs.aws_subnet_privatesubnets_02_id"]
+security_group_ids      = []
