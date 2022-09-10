@@ -1,8 +1,7 @@
-module "vpc" {
   module "vpc" {
   source  = "app.terraform.io/veloce/vpc/aws"
   version = "1.0.1"
-  }
+  
   # insert required variables here 
   region = var.region
   main_vpc_cidr          = var.main_vpc_cidr
