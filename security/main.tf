@@ -3,13 +3,13 @@ data "terraform_remote_state" "vpc" {
   config = {
     organization = "veloce"
     workspaces = {
-      name = "terraform-code-vpc"
+      name = "terraform-code-security"
     }
   }
 }
 module "security" {
   source  = "app.terraform.io/veloce/security/aws"
-  version = "1.0.1"
+  version = "1.0.2"
   # insert required variables here
 
   region                  = var.region
