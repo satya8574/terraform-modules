@@ -3,5 +3,5 @@ security_group_rds_port = "SG_rds"
 creator_name       = "Creator_Name"
 environment_name   = "Dev"
 managedby          = "Terraform"
-vpc_name           = ""
+
 region             = "us-east-2"
