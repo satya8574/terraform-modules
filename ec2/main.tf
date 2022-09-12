@@ -36,8 +36,7 @@ module "ec2" {
 
 
 
-  subnet_id                        = data.terraform_remote_state.vpc.output.aws_subnet_publicsubnets_01_id
-
+  public_subnet                        = data.terraform_remote_state.vpc.outputs.aws_subnet_publicsubnets_01_id
   ec2_ami_id                       = var.ec2_ami_id
   instance_type                    = var.instance_type
   ec2-server-name                  = var.ec2-server-name
@@ -45,7 +44,7 @@ module "ec2" {
   ec2-service-owner                = var.ec2-service-owner
   key_pair_name                    = var.key_pair_name
   region                           = var.region
-  vpc                              = data.terraform_remote_state.vpc.outputs.aws_vpc_id
+  #vpc                              = data.terraform_remote_state.vpc.outputs.aws_vpc_id
   security_group                   = data.terraform_remote_state.security.outputs.aws_security_group_ssh_id
-  iam_instance_profile             = data.terraform_remote_state.iam-role.outputs.iam_instance_profile
+  iam_instance_profile             = data.terraform_remote_state.iam-role.output.iam_instance_profile
 }
