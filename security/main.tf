@@ -9,7 +9,7 @@ data "terraform_remote_state" "vpc" {
 }
 module "security" {
   source  = "app.terraform.io/rootorg/security/aws"
-  version = "1.0.1"
+  version = "1.0.2"
   # insert required variables here
 
 
