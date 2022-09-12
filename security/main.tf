@@ -1,7 +1,7 @@
 data "terraform_remote_state" "vpc" {
   backend = "remote"
   config = {
-    organization = "veloce"
+    organization = "satyap"
     workspaces = {
       name = "terraform-code-vpc"
     }
