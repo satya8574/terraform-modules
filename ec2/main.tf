@@ -1,24 +1,27 @@
 data "terraform_remote_state" "vpc" {
   backend = "remote"
   config = {
-    organization = "tmz-veloce-proj"
+    organization = "rootorg"
     workspaces = {
-      name = "veloce-terraform-vpc"
+      name = "terraform-code-vpc"
     }
   }
 }
 data "terraform_remote_state" "security" {
   backend = "remote"
   config = {
-    organization = "tmz-veloce-proj"
+    organization = "rootorg"
     workspaces = {
-      name = "veloce-terraform-security"
+      name = "terraform-code-security"
     }
   }
 }
 module "ec2" {
-  source  = "app.terraform.io/tmz-veloce-proj/ec2/aws"
-  version = "1.0.0"
+  source  = "app.terraform.io/rootorg/ec2/aws"
+  version = "1.0.1"
+  # insert required variables here
+
+
   vpc_name = var.vpc_name
   subnet_name                      = var.subnet_name
   ec2_ami_id                       = var.ec2_ami_id
