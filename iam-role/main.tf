@@ -1,5 +1,5 @@
 module "iam-role" {
-  source  = "app.terraform.io/rootorg/iam-role/aws"
+  source  = "app.terraform.io/veloce-1/iam-role/aws"
   version = "1.0.1"
   # insert required variables here
 
