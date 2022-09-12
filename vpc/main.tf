@@ -1,5 +1,5 @@
 module "vpc" {
-  source  = "app.terraform.io/satyap/vpc/aws"
+  source  = "app.terraform.io/rootorg/vpc/aws"
   version = "1.0.1"
   # insert required variables here
 
