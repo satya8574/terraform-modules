@@ -1,16 +1,17 @@
 data "terraform_remote_state" "vpc" {
   backend = "remote"
   config = {
-    organization = "satyap"
+    organization = "rootorg"
     workspaces = {
       name = "terraform-code-vpc"
     }
   }
 }
 module "security" {
-  source  = "app.terraform.io/satyap/security/aws"
+  source  = "app.terraform.io/rootorg/security/aws"
   version = "1.0.1"
   # insert required variables here
+
 
   region                  = var.region
   security_group_ssh_port = var.security_group_ssh_port
