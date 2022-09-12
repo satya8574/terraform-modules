@@ -8,9 +8,10 @@ data "terraform_remote_state" "vpc" {
   }
 }
 module "security" {
-  source  = "app.terraform.io/veloce/security/aws"
-  version = "1.0.2"
+  source  = "app.terraform.io/satyap/security/aws"
+  version = "1.0.1"
   # insert required variables here
+
 
 
   region                  = var.region
