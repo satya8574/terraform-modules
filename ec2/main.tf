@@ -36,7 +36,7 @@ module "ec2" {
 
 
 
-  public_subnet                        = data.terraform_remote_state.vpc.outputs.aws_subnet_publicsubnets_01_id
+  subnet_id                       = data.terraform_remote_state.vpc.outputs.aws_subnet_publicsubnets_01_id
   ec2_ami_id                       = var.ec2_ami_id
   instance_type                    = var.instance_type
   ec2-server-name                  = var.ec2-server-name
