@@ -3,7 +3,7 @@ data "terraform_remote_state" "vpc" {
   config = {
     organization = "rootorg"
     workspaces = {
-      name = "terraform-code-vpc"
+      name = "terraform-code-security"
     }
   }
 }
