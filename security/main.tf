@@ -3,7 +3,7 @@ data "terraform_remote_state" "vpc" {
   config = {
     organization = "veloce"
     workspaces = {
-      name = "terraform-code-security"
+      name = "terraform-code-vpc"
     }
   }
 }
