@@ -47,5 +47,5 @@ module "ec2" {
   #vpc                              = data.terraform_remote_state.vpc.outputs.aws_vpc_id
   security_group                   = data.terraform_remote_state.security.outputs.aws_security_group_ssh_id.id
   iam_instance_profile             = data.terraform_remote_state.iam-role.output.iam_instance_profile
-  subnet_id = "Veloce_Pub_Subnet_01"
+ # subnet_id = "Veloce_Pub_Subnet_01"
 }
