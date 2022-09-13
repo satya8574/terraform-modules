@@ -5,7 +5,5 @@ variable "ec2-server-environment" {}
 variable "ec2-service-owner" {}
 variable "key_pair_name" {}
 variable "region" {}
-variable "public_subnet" {}
-variable "security_group" {}
 
 #variable "iam_instance_profile" {}
