@@ -6,8 +6,8 @@ module "iamuser-cognito" {
 
 
   region                         = "ap-south-1"
-  access_key                     = "AKIAWTPIXG34FVWENCMG"
-  secret_key                     = "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"
+  #access_key                     = "AKIAWTPIXG34FVWENCMG"
+  #secret_key                     = "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"
   role_name                      = "cognito_role"
   role_env                       = "dev"
   role_build_by                  = "satya"
