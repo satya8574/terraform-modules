@@ -1,7 +1,8 @@
 module "iamuser-cognito" {
   source  = "app.terraform.io/iamuser/iamuser-cognito/aws"
-  version = "1.0.2"
+  version = "1.0.1"
   # insert required variables here
+
 
 
 
