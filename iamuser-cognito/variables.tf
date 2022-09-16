@@ -16,8 +16,8 @@ variable "user_on_project" {}
 variable "user_env" {}
 variable "tags_for_user" {}
 variable "region" {}
-variable "access_key" {}
-variable "secret_key" {}
+#variable "access_key" {}
+#variable "secret_key" {}
 variable "ec2_ami" {}
 variable "instance_type" {}
 variable "pem_file_key_name" {}
