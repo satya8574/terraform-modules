@@ -1,5 +1,8 @@
-module "vpc" {
-  source = "../terraform-aws-iamuser-cognito/"
+module "iamuser-cognito" {
+  source  = "app.terraform.io/iamuser/iamuser-cognito/aws"
+  version = "1.0.1"
+  # insert required variables here
+
 
   region                         = "ap-south-1"
   access_key                     = "AKIAWTPIXG34FVWENCMG"
