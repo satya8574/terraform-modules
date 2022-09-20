@@ -1,14 +1,14 @@
 module "iamuser-cognito" {
-  source  = "app.terraform.io/iamuser/iamuser-cognito/aws"
-  version = "1.0.1"
+  source  = "app.terraform.io/veloce-002/iamuser-cognito/aws"
+  version = "1.0.2"
   # insert required variables here
 
 
 
 
+
   region                         = "ap-south-1"
-  #access_key                     = "AKIAWTPIXG34FVWENCMG"
-  #secret_key                     = "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"
+ 
   role_name                      = "cognito_role"
   role_env                       = "dev"
   role_build_by                  = "satya"
