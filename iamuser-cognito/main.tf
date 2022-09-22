@@ -4,10 +4,6 @@ module "iamuser-cognito" {
   # insert required variables here
 
 
-
-
-
-
   region                         = "ap-south-1"
   role_name                      = "cognito_role"
   role_env                       = "dev"
