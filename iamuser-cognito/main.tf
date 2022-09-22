@@ -10,7 +10,6 @@ module "iamuser-cognito" {
 
 
   region                         = "ap-south-1"
- 
   role_name                      = "cognito_role"
   role_env                       = "dev"
   role_build_by                  = "satya"
