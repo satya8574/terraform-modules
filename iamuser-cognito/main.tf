@@ -3,7 +3,6 @@ module "iamuser-cognito" {
   version = "1.0.2"
   # insert required variables here
 
-  # insert required variables here
 
 
 
